@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: 0
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: hsl(216, 13%, 15%);
+    color: hsl(221, 11%, 29%);
+    font-size: 1.6rem;
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
+}
+
+.days {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.days-count {
+    font-size: 15rem;
+    letter-spacing: -0.4rem;
+    text-shadow: 0 0.1rem 0.1rem hsl(0, 0%, 5%);
+}
+
+.days-text {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .7rem;
+    text-shadow: 0 0.1rem 0.1rem hsl(0, 0%, 5%);
+}
+
+.days-text > * {
+    text-align: center;
+    padding: 0.5rem 0;
+}
